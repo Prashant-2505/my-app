@@ -60,15 +60,15 @@ function App() {
       <Router>
         <Navbar title="Textutils" aboutText="about us" mode={mode} togglemode={togglemode} green={green} yellow={yellow} />
         <div className="container">
-        <div className="container">
           <Routes>
-            <Route exact path="/about" element={<About />}>
-            </Route>
-            <Route exact path="/" element={<TextForm heading="Enter text to analyze"  mode={mode}  />}>
+            <Route exact path="/about" element={<About />}/>
+           
+            <Route exact  path="/" element={ <TextForm heading="Enter text to analyze"  mode={mode}  />}>
+           
             </Route>
           </Routes>
         </div>
-        </div>
+      
       </Router>
     </>
   );
